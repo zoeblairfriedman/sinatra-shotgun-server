@@ -4,6 +4,8 @@
 
 This lesson will introduce you to Shotgun and how to use it with Sinatra apps. We'll also cover troubleshooting common problems that you might encounter when running Shotgun. 
 
+_Note: `shotgun` only works on Linux and Mac OS X. If you're not using a Linux VM on Windows, you might encounter difficulties in this section of the course. Seek coaching advise if you need help._
+
 ## Objectives
 
 1. Explain how using `rackup` to start a Sinatra application will only read the code once at boot 
