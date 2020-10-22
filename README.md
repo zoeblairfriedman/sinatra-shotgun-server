@@ -35,15 +35,15 @@ For the purpose of this lesson, fork and clone this repo. There are, however, no
 tests to pass. In terminal, go ahead and enter `rackup app.rb`. This will start
 up a Rack server. You should see something like this:
 
-<img src="https://s3.amazonaws.com/learn-verified/rackup.png">
+![rackup](https://s3.amazonaws.com/learn-verified/rackup.png)
 
 Pay attention to the line that says `Listening on localhost:9292`.
 `localhost:9292` is the url you want to enter in the browser. If you are in the
-Learn IDE, you will see a different address —
-[here's an explanatory Help Center
-article](http://help.learn.co/the-learn-ide/common-ide-questions/accessing-localhost-in-the-learn-ide).
-Go ahead and copy and paste that into the browser. You should see `Welcome to
-your app!!!!` on the screen.
+Learn IDE, you will see a different address — [here's an explanatory Help Center
+article][help]. Go ahead and copy and paste that into the browser. You should
+see `Welcome to your app!!!!` on the screen.
+
+[help]: http://help.learn.co/the-learn-ide/common-ide-questions/accessing-localhost-in-the-learn-ide
 
 When starting an application with `rackup`, our application code is read once on
 boot and never again. Once we start the application locally, if we make changes
@@ -70,11 +70,13 @@ This tedious save, stop, and restart cycle makes developing Rack or Sinatra
 applications near impossible. To avoid this, instead of starting our application
 with `rackup`, we will use `shotgun`.
 
-[Shotgun](https://github.com/rtomayko/shotgun) is a small Ruby gem that makes it
+[Shotgun][] is a small Ruby gem that makes it
 easier to develop and test Rack-based Ruby web applications locally by starting
 Rack with automatic code reloading. Remember: a gem is just a library of code
 that developers wrote and made free and available to the public. This gem lets
 us start Rack to have a development server running to test our app.
+
+[Shotgun]: https://github.com/rtomayko/shotgun
 
 When you start an application with `shotgun`, all of your application code will
 be reloaded upon every request. That means if you change anything in your code
