@@ -9,4 +9,5 @@ gem 'thin'
 gem 'shotgun'
 gem 'pry'
 gem 'require_all'
+gem 'bundler', '2.2.11'
     
